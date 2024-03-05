@@ -4,14 +4,14 @@ class SizeConfig {
   static double _blockWidth = 0;
   static double _blockHeight = 0;
 
-  static double textMultiplier;
-  static double imageSizeMultiplier;
-  static double heightMultiplier;
-  static double widthMultiplier;
+  static double textMultiplier = 0.0;
+  static double imageSizeMultiplier = 0.0;
+  static double heightMultiplier = 0.0;
+  static double widthMultiplier = 0.0;
   static bool isPortrait = true;
   static bool isMobilePortrait = false;
-  static double screenWidth;
-  static double screenHeight;
+  static double screenWidth = 0.0;
+  static double screenHeight = 0.0;
 
   void init(BoxConstraints constraints, Orientation orientation) {
     if (orientation == Orientation.portrait) {

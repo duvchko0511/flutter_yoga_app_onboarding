@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class ItemSplashPageView extends StatelessWidget {
   const ItemSplashPageView({
-    Key key,
-    @required this.title,
-    @required this.description,
-    @required this.img_path,
+    Key? key,
+    required this.title,
+    required this.description,
+    required this.img_path,
   }) : super(key: key);
 
   final String title;

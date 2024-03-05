@@ -212,7 +212,7 @@ class _SplashScreenState extends State<SplashScreen> {
                                   style: Theme.of(context)
                                       .textTheme
                                       .subtitle1
-                                      .copyWith(
+                                      ?.copyWith(
                                           color: AppTheme.headlineTextColor
                                               .withOpacity(0.4)),
                                   textAlign: TextAlign.center,

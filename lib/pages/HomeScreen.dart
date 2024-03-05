@@ -157,7 +157,7 @@ class HomeScreen extends StatelessWidget {
                                 style: Theme.of(context)
                                     .textTheme
                                     .subtitle1
-                                    .copyWith(
+                                    ?.copyWith(
                                         color: AppTheme.headlineTextColor
                                             .withOpacity(0.4)),
                                 textAlign: TextAlign.center,
@@ -172,20 +172,23 @@ class HomeScreen extends StatelessWidget {
                                 child: FractionallySizedBox(
                                   widthFactor: 0.5,
                                   child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
                                     children: [
                                       Flexible(
                                         flex: 33,
                                         child: AspectRatio(
-                                          aspectRatio: 1/1,
+                                          aspectRatio: 1 / 1,
                                           child: Card(
                                             elevation: 0,
                                             color: Colors.blue,
                                             shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(50),
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(10.0),
+                                              padding:
+                                                  const EdgeInsets.all(10.0),
                                               child: SvgPicture.asset(
                                                   'assets/images/icon_fb.svg'),
                                             ),
@@ -194,45 +197,49 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       Flexible(
                                         flex: 33,
-                                        child:  AspectRatio(
-                                          aspectRatio: 1/1,
+                                        child: AspectRatio(
+                                          aspectRatio: 1 / 1,
                                           child: Card(
-                                          elevation: 0,
-                                          color: Colors.transparent,
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(50),
-                                              side: BorderSide(
-                                                width: 2,
-                                                color: Colors.red,
-                                              )
+                                            elevation: 0,
+                                            color: Colors.transparent,
+                                            shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
+                                                side: BorderSide(
+                                                  width: 2,
+                                                  color: Colors.red,
+                                                )),
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(10.0),
+                                              child: SvgPicture.asset(
+                                                  'assets/images/icon_google.svg'),
+                                            ),
                                           ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10.0),
-                                            child: SvgPicture.asset(
-                                                'assets/images/icon_google.svg'),
-                                          ),
-                                      ),
                                         ),
                                       ),
                                       Flexible(
                                         flex: 33,
                                         child: AspectRatio(
-                                          aspectRatio: 1/1,
+                                          aspectRatio: 1 / 1,
                                           child: Card(
-                                            elevation: 0,
-                                            color: Colors.transparent,
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius: BorderRadius.circular(50),
-                                                side: BorderSide(
-                                                  width: 2,
+                                              elevation: 0,
+                                              color: Colors.transparent,
+                                              shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(50),
+                                                  side: BorderSide(
+                                                    width: 2,
+                                                    color: Colors.blue,
+                                                  )),
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(10.0),
+                                                child: Icon(
+                                                  EvaIcons.twitter,
                                                   color: Colors.blue,
-                                                )
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(10.0),
-                                              child: Icon(EvaIcons.twitter,color: Colors.blue,),
-                                            )
-                                          ),
+                                                ),
+                                              )),
                                         ),
                                       ),
                                     ],
